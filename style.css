@@ -1,0 +1,40 @@
+.glide__slide {
+    margin: 0 5px;
+    height: 75vh;
+    list-style: none;
+    border: 1px solid gray;
+    border-radius: 3%;
+    text-align: center;
+  }
+
+  .glide__slides{
+    display: flex;
+  }
+  
+  .glide__arrow--next {
+    right: 17%;
+  }
+
+  .purchaseSection{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #buyButton{
+    background-color: red;
+    color: white;
+    border-radius: 20%;
+    border: none;
+  }
+
+  .glide__slide_img{
+    margin-top: 10%;
+  }
+  
+  #page{
+    text-align: center;
+  }
+
+  .controls{
+    text-align: center;
+  }
