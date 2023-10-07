@@ -10,8 +10,8 @@ const slidesPrice = document.querySelectorAll('.glide__slide_price');
 
 for (let i = 0; i < slides.length; i++) {
 	slidesImg[i].src = `${jsonData[i].imageMain}`;
-	slidesImg[i].style.width = '15rem';
-	slidesImg[i].style.height = '20rem';
+	slidesImg[i].style.width = '50%';
+	slidesImg[i].style.height = '60%';
 
 	slidesCategory[i].textContent = `${jsonData[i].category}`;
 	slidesCategory[i].style.color = 'gray';
