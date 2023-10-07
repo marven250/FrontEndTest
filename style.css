@@ -21,14 +21,26 @@
   }
 
   #buyButton{
-    background-color: red;
-    color: white;
-    border-radius: 20%;
-    border: none;
+    color: #ffffff;
+    background-color: #e63b3b;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: solid 0.4px #e63b3b;
+  }
+
+  #buyButton:hover{
+    background-color: #ffffff;
+    color: #e63b3b;
   }
 
   .glide__slide_img{
     margin-top: 10%;
+  }
+
+  .glide__slide_img:hover{
+    opacity: .75;
   }
   
   #page{
