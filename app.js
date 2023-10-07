@@ -9,12 +9,20 @@ const slidesProductName = document.querySelectorAll(
 const slidesPrice = document.querySelectorAll('.glide__slide_price');
 
 for (let i = 0; i < slides.length; i++) {
-	slidesImg[i].src = `${jsonData[i].imageMain}`;
-	slidesImg[i].style.width = '50%';
-	slidesImg[i].style.height = '60%';
+	const currentSlidesImg = slidesImg[i];
+	currentSlidesImg.src = `${jsonData[i].imageMain}`;
+	currentSlidesImg.style.width = '50%';
+	currentSlidesImg.style.height = '60%';
+	currentSlidesImg.addEventListener('mouseover', () => {
+		currentSlidesImg.src = `${jsonData[i].imageAlt}`;
+	});
+	currentSlidesImg.addEventListener('mouseout', () => {
+		currentSlidesImg.src = `${jsonData[i].imageMain}`;
+	});
 
-	slidesCategory[i].textContent = `${jsonData[i].category}`;
-	slidesCategory[i].style.color = 'gray';
+	const currentSlidesCategory = slidesCategory[i];
+	currentSlidesCategory.textContent = `${jsonData[i].category}`;
+	currentSlidesCategory.style.color = 'gray';
 
 	slidesProductName[i].textContent = `${jsonData[i].productName}`;
 
